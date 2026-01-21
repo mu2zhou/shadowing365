@@ -1,0 +1,71 @@
+# Shadowing Video Generator Configuration
+
+# Input and Output
+input_file: "input/001_Weber Max 1864_1920 Politics as a vocation.pdf"
+output_dir: "output"
+project_name: "weber_politics_video"
+
+# Language Settings
+source_lang: "en" # 'en' or 'de'
+target_lang: "zh"
+
+# Text Processing
+# Min/Max characters per segment to avoid too short/long subtitles
+min_segment_len: 40   # Minimum to avoid short fragments
+max_segment_len: 120  # Max before splitting at clause boundaries
+max_pages: 3  # 0 for all pages
+
+# Translation Spec
+# Choices: 'mock', 'google_gemini', 'openai', 'ollama'
+translation_provider: "ollama" 
+openai_api_key: ""
+gemini_api_key: ""
+
+# Ollama Settings
+ollama_base_url: "http://localhost:11434"
+ollama_model: "qwen2.5:7b" # Recommended: qwen2.5, llama3
+enable_trivia: true # Enable "Inspiration/Trivia" generator
+
+# TTS Settings
+# Providers: 'edge', 'fish_speech', 'kokoro'
+tts_provider: "kokoro" # Using Kokoro for high quality local TTS
+
+# Kokoro Settings
+kokoro_lang_code: 'a' # 'a' for American English, 'b' for British
+kokoro_voice: 'af_heart' # 'af_heart', 'af_bella', 'am_michael', 'bf_emma', 'bm_george'
+kokoro_model_path: "/home/dell/workspace/001_Shadowing365/Kokoro-82M" # Local path or HF repo ID
+
+# Fish Speech API Settings
+fish_speech_url: "http://localhost:8000/v1/tts"
+# fish_speech_ref_audio: "input/ref_voice.wav"                 # British
+# fish_speech_ref_audio: "input/ref_voice_us_broadcast.wav"   # US Broadcast (Edge-TTS anchor)
+# fish_speech_ref_audio: "input/ref_voice_pure_american.wav"  # Pure Authentic (Phil Chenevert)
+# fish_speech_ref_audio: "input/ref_voice_us_broadcast.wav"   # US Broadcast (Edge-TTS anchor)
+# TIP: You can switch between these by commenting/uncommenting.
+
+# Voices (for edge-tts fallback): 
+# English: 'en-US-ChristopherNeural', 'en-US-AriaNeural'
+# German: 'de-DE-KillianNeural', 'de-DE-KatjaNeural'
+tts_voice: "en-US-AriaNeural"
+tts_rate: "+0%"
+tts_pitch: "+0Hz"
+tts_volume: "+0%"
+
+# Edge/General TTS tuning
+tts_fallback_providers: ["mock"]
+edge_chunk_word_limit: 60
+
+# Video Settings
+resolution: [1920, 1080]
+# Solarized Light Theme
+background_color: "#fdf6e3" # Solarized Base3 (Cream)
+text_color_highlight: "#073642" # Solarized Base02 (Dark Blue/Grey - Primary Content)
+text_color_dim: "#586e75" # Solarized Base01 (Lighter Grey - Secondary Content)
+font_size_source: 65
+font_size_target: 40
+fps: 24
+text_wrap_width: 35 # Characters per line (approx)
+
+# Font Setting (Added)
+font_path: "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc"
+font_index: 2 # 0=JP, 1=KR, 2=SC, 3=TC

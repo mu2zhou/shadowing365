@@ -1,0 +1,9 @@
+*.mp3
+*.mp4
+*.pth
+BILIBILI_SCRIPT.md
+fish_speech/
+input/
+output/step1_translated.json
+output/step2_audio.json
+output/temp_audio/

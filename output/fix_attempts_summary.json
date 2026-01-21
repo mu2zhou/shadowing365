@@ -1,0 +1,79 @@
+[
+  {
+    "index": 11,
+    "provider": "edge",
+    "status": "replaced",
+    "stats": {
+      "valid": true,
+      "dur": 0.0,
+      "rms": 0.0,
+      "non_silent_ratio": 0.0
+    }
+  },
+  {
+    "index": 13,
+    "provider": "edge",
+    "status": "replaced",
+    "stats": {
+      "valid": true,
+      "dur": 0.0,
+      "rms": 0.0,
+      "non_silent_ratio": 0.0
+    }
+  },
+  {
+    "index": 18,
+    "provider": "edge",
+    "status": "replaced",
+    "stats": {
+      "valid": true,
+      "dur": 0.0,
+      "rms": 0.0,
+      "non_silent_ratio": 0.0
+    }
+  },
+  {
+    "index": 20,
+    "provider": "edge",
+    "status": "replaced",
+    "stats": {
+      "valid": true,
+      "dur": 0.0,
+      "rms": 0.0,
+      "non_silent_ratio": 0.0
+    }
+  },
+  {
+    "index": 23,
+    "provider": "edge",
+    "status": "replaced",
+    "stats": {
+      "valid": true,
+      "dur": 0.0,
+      "rms": 0.0,
+      "non_silent_ratio": 0.0
+    }
+  },
+  {
+    "index": 26,
+    "provider": "edge",
+    "status": "replaced",
+    "stats": {
+      "valid": true,
+      "dur": 0.0,
+      "rms": 0.0,
+      "non_silent_ratio": 0.0
+    }
+  },
+  {
+    "index": 27,
+    "provider": "edge",
+    "status": "replaced",
+    "stats": {
+      "valid": true,
+      "dur": 0.0,
+      "rms": 0.0,
+      "non_silent_ratio": 0.0
+    }
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "source": "This is a sample sentence for the shadowing video.",
+    "target": "[译] This is a sample sentence for the shadowing video.",
+    "audio_path": "output/smoke_test/temp_audio/seg_0000.mp3"
+  },
+  {
+    "source": "It demonstrates the technical feasibility of the product.",
+    "target": "[译] It demonstrates the technical feasibility of the product.",
+    "audio_path": "output/smoke_test/temp_audio/seg_0001.mp3"
+  },
+  {
+    "source": "The system converts this PDF into a video.",
+    "target": "[译] The system converts this PDF into a video.",
+    "audio_path": "output/smoke_test/temp_audio/seg_0002.mp3"
+  }
+]

@@ -1,0 +1,15 @@
+input_file: "input/sample_book.pdf"
+output_dir: "output/smoke_test"
+project_name: "smoke_test"
+source_lang: "en"
+target_lang: "zh"
+min_segment_len: 20
+max_segment_len: 200
+max_pages: 1
+translation_provider: "mock"
+tts_provider: "mock"
+mock_tts_duration: 0.8
+resolution: [640, 360]
+font_size_source: 40
+font_size_target: 24
+fps: 12

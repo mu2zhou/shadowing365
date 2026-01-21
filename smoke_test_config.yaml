@@ -1,0 +1,39 @@
+# Smoke Test Configuration - Using Mock TTS to test the pipeline
+input_file: "input/sample_book.pdf"
+output_dir: "output"
+project_name: "smoke_test"
+
+# Language Settings
+source_lang: "en" # 'en' or 'de'
+target_lang: "zh"
+
+# Text Processing
+# Min/Max characters per segment to avoid too short/long subtitles
+min_segment_len: 40   # Minimum to avoid short fragments
+max_segment_len: 120  # Max before splitting at clause boundaries
+max_pages: 1  # Limit to 1 page for test
+
+# Translation Spec
+translation_provider: "mock" 
+ollama_base_url: "http://localhost:11434"
+ollama_model: "qwen2.5:7b"
+
+# TTS Settings - Using mock for smoke test
+tts_provider: "mock"
+tts_voice: "en-US-ChristopherNeural"
+tts_rate: "-10%"  # Slower for shadowing
+tts_pitch: "+0Hz"
+
+# Video Settings
+resolution: [1920, 1080]
+background_color: "#fdf6e3" # Solarized Base3 (Cream)
+text_color_highlight: "#073642" # Solarized Base02 (Dark Blue/Grey - Primary Content)
+text_color_dim: "#586e75" # Solarized Base01 (Lighter Grey - Secondary Content)
+font_size_source: 65
+font_size_target: 40
+fps: 24
+text_wrap_width: 35 # Characters per line (approx)
+
+# Font Setting (Added)
+font_path: "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc"
+font_index: 2 # 0=JP, 1=KR, 2=SC, 3=TC
