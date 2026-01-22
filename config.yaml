@@ -52,8 +52,9 @@ tts_pitch: "+0Hz"
 tts_volume: "+0%"
 
 # Edge/General TTS tuning
-tts_fallback_providers: ["mock"]
+tts_fallback_providers: ["edge", "mock"]
 edge_chunk_word_limit: 60
+mock_tts_duration: 2.5  # Increased from 0.8 to 2.5 seconds for longer texts
 
 # Video Settings
 resolution: [1920, 1080]
