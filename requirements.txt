@@ -9,4 +9,4 @@ python-dotenv>=1.0.0
 kokoro>=0.7.8
 soundfile>=0.12.1
 torch>=2.0.0
-numpy>=1.24.0
+numpy>=1.24.0,<2.0.0
